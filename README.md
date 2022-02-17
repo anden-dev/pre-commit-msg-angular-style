@@ -13,7 +13,7 @@ Install
 ---------
 
 1. create .pre-commit-config.yaml in you git project
-2. pre-commit install 
+2. pre-commit install --hook-type commit-msg 
 3. enjoy it
 
 example .pre-commit-config.yaml as following:
@@ -25,4 +25,5 @@ repos:
   rev: v1.0.0
   hooks:
   - id: commitmessage
+    stages: [commit-msg]
 ```
