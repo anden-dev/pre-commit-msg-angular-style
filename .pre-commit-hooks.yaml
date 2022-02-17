@@ -1,0 +1,5 @@
+- id: commitmessage
+  name: commitmessage check
+  description: "Check whether the commit message follows commiting rules"
+  entry: pre_commit_hooks/commit-msg.py
+  language: script
